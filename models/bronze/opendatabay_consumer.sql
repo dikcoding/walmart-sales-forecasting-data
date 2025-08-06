@@ -1,0 +1,10 @@
+SELECT
+  STORE,
+  DATE,
+  WEEKLY_SALES,
+  HOLIDAY_FLAG,
+  TEMPERATURE,
+  FUEL_PRICE,
+  CPI,
+  UNEMPLOYMENT
+FROM {{ source('analytics', 'data') }}
