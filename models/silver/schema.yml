@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: bronze_retail_sales
+    description: >
+      Dataset penjualan mingguan per toko dari OpenDataBay, termasuk indikator eksternal
+      seperti hari libur, temperatur, harga bahan bakar, CPI, dan tingkat pengangguran.
+    columns:
+      - name: store
+        description: "ID unik masing-masing toko ritel"
+      - name: date
+        description: "Tanggal minggu penjualan (format YYYY-MM-DD)"
+      - name: weekly_sales
+        description: "Total penjualan selama minggu tersebut (USD)"
+      - name: holiday_flag
+        description: "1 jika minggu tersebut adalah libur nasional, 0 jika bukan"
+      - name: temperature
+        description: "Suhu rata-rata minggu tersebut (°F)"
+      - name: fuel_price
+        description: "Harga bahan bakar rata-rata per galon (USD)"
+      - name: cpi
+        description: "Consumer Price Index (indikator ekonomi)"
+      - name: unemployment
+        description: "Tingkat pengangguran regional (%)"
